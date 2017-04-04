@@ -87,7 +87,7 @@
     <!--  Main section  -->
     <section class="bg-main pb-5">
         <div class="container">
-            <div class="row text-center pt-5">
+            <div class="row text-center pt-5 ">
                 <div class="col-12 pb-4">
                     <h2>Публічна інформація</h2>
                     <hr>
@@ -191,34 +191,12 @@
     </footer>
 
     <script>
-        function printDoc() {
-            window.print();
-        }
-
-        function sendTxt() {
-            document.getElementById('one').innerHTML = document.getElementById('val1').value;
-            document.getElementsByClassName('two')[0].innerHTML = document.getElementById('val2').value;
-            document.getElementsByClassName('two')[1].innerHTML = document.getElementById('val2').value;
-            document.getElementById('three').innerHTML = document.getElementById('val3').value;
-            document.getElementById('four').innerHTML = document.getElementById('val4').value;
-            document.getElementById('five').innerHTML = document.getElementById('val5').value;
-            document.getElementById("date").innerHTML = formatAMPM();
-
-            function formatAMPM() {
-                var d = new Date(),
-                    minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes(),
-                    hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
-
-                    months = ['січня', 'лютого', 'березня', 'квітня', 'травня', 'червня', 'липня', 'серпня', 'вересня', 'жовтня', 'листопада', 'грудня'];
-
-                return d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear() + 'p';
-            }
-        }
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+    <script src="main.js"></script>
 
 </body>
 
