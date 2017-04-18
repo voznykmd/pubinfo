@@ -100,3 +100,30 @@ header {
 .main-txt > p {
   text-indent: 1.5em;
 }
+
+/*Auto*/
+
+.ui-state-active,
+.ui-state-focus {
+  color: #23527c;
+  background-color: #eeeeee;
+}
+
+.ui-autocomplete {
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 0;
+  float: left;
+  display: none;
+  min-width: 160px;
+  width: 160px;
+  padding: 4px 0;
+  margin: 2px 0 0 0;
+  overflow: auto;
+  z-index: 9999;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.4);
+}
