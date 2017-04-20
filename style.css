@@ -1,50 +1,64 @@
 /*GLOBAL CLASSES*/
 body {
-  color: white;
-  font-family: 'Titillium Web', sans-serif;
+  color: #333333;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 ul {
   padding-left: 0;
 }
 
+h1,h2,h3:hover {
+transition: all 0.3s ease;
+color: #333333;
+}
+
+h1,h2,h3 {
+  color: #03c7de;
+}
+
+
 .w-border {
  border: 2px solid white;
 }
 
 .bg-main {
-  background-color: #226666;
+  background-color: white;
 }
 
 .bg-head-foot {
-  background-color: #15454E;
+  background-color: #333333;
+  color: white;
 }
 
 .button {
   width: 293px;
   height: 70px;
   border: none;
-  border-radius: 4px;
-  background-color: #ABE3E3;
+  border-radius: 0;
+  background-color: #039aac;
   font-size: 17.5px;
   font-weight: 600;
-  color: #063535;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #03c7de;
 }
 
 .button-mod {
   width: 7rem;
   height: 3rem;
   border: none;
-  border-radius: 4px;
-  background-color: #ABE3E3;
+  border-radius: 0;
+  background-color: #039aac;
   font-size: .9rem;
   font-weight: 600;
-  color: #063535;
+  color:  #ffffff;
 }
 
-.button:active {
-  background-color: white;
-  border: none;
+.button-mod:hover {
+  background-color: #03c7de;
 }
 
 
@@ -57,8 +71,7 @@ hr {
 }
 
 header {
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  box-shadow: 0 0 4px 0 #000000;
 }
 
 .footer {
