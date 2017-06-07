@@ -1,49 +1,53 @@
-/*GLOBAL CLASSES*/
 body {
-  color: #333333;
-  font-family: 'Roboto Condensed', sans-serif;
+  color: #001419;
+  font-family: 'Helvetica', sans-serif;
 }
 
 ul {
   padding-left: 0;
+  padding-bottom: 0;
 }
 
-h1,h2,h3:hover {
-transition: all 0.3s ease;
-color: #333333;
+/* !!!Між строками тексту неравномірні відступи*/
+
+h3 {
+  color: white;
 }
 
-h1,h2,h3 {
-  color: #03c7de;
+h4 {
+  color: #001419;
 }
 
-
-.w-border {
- border: 2px solid white;
+.row {
+ margin-left: 50px;
+ margin-top: 10px;
+ margin-right: 50px;
 }
 
 .bg-main {
-  background-color: white;
+  background-color: #97c4c5;
 }
 
 .bg-head-foot {
-  background-color: #333333;
+  background-color: #01535b;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .button {
   width: 293px;
   height: 70px;
   border: none;
-  border-radius: 0;
-  background-color: #039aac;
-  font-size: 17.5px;
+  border-radius: 2;
+  background-color: #60a201;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
   font-weight: 600;
   color: #ffffff;
 }
 
 .button:hover {
-  background-color: #03c7de;
+  background-color: #c0b95d;
 }
 
 .button-mod {
@@ -52,7 +56,7 @@ h1,h2,h3 {
   border: none;
   border-radius: 0;
   background-color: #039aac;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color:  #ffffff;
 }
@@ -61,32 +65,14 @@ h1,h2,h3 {
   background-color: #03c7de;
 }
 
-
-hr {
-  width: 87px;
-  height: 4px;
-  opacity: 0.15;
-  background-color: #000000;
-  background-color: black;
-}
-
-header {
-  box-shadow: 0 0 4px 0 #000000;
-}
-
 .footer {
   min-height: 70px;
   border-top: 1px solid white;
 }
 
-.logo-title {
-  font-size: 0.9em;
-  font-weight: 100;
-}
-
 .print {
-              display: none;
-            }
+  display: none;
+}
 
 @media print {
                 div {
@@ -101,9 +87,8 @@ header {
 
 .right {
   float: right;
-    width: 300px;
-
-    padding: 10px;
+  width: 300px;
+  padding: 10px;
 }
 
 #myModal {
@@ -115,7 +100,6 @@ header {
 }
 
 /*Auto*/
-
 .ui-state-active,
 .ui-state-focus {
   color: #23527c;
@@ -140,3 +124,13 @@ header {
   background-color: #fff;
   box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.4);
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+  }

@@ -339,3 +339,47 @@ var data =
 				}
 			});
 		});
+
+
+    //Download PDF document
+    var doc = new jsPDF();
+var specialElementHandlers = {
+    '#editor': function (element, renderer) {
+        return true;
+    }
+};
+
+$('#cmd').click(function () {
+    doc.fromHTML($('#pdf-file').html(), 15, 15, {
+        'width': 100,
+            'elementHandlers': specialElementHandlers
+    });
+    doc.save('Pubinfo.pdf');
+});
+
+
+    //Send mail
+var nodemailer = require(['nodemailer']);
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'youremail@gmail.com',
+    pass: 'yourpassword'
+  }
+});
+
+var mailOptions = {
+  from: 'youremail@gmail.com',
+  to: 'myfriend@yahoo.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  })
