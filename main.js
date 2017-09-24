@@ -7,7 +7,8 @@ function sendTxt() {
     document.getElementById('three').innerHTML = document.getElementById('val3').value;
     document.getElementById('four').innerHTML = document.getElementById('val4').value;
     document.getElementById('five').innerHTML = document.getElementById('val5').value;
-    document.getElementById("date").innerHTML = formatDate();
+    document.getElementById('six').innerHTML = document.getElementById('val6').value;
+    document.getElementById('date').innerHTML = formatDate();
 
     function formatDate() {
         var d = new Date(),
